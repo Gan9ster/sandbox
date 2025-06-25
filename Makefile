@@ -5,10 +5,10 @@ BINARY=hsrctl
 all: build
 
 build:
-go build -o bin/$(BINARY) ./cmd/hsrctl
+	go build -o bin/$(BINARY) ./cmd/hsrctl
 
 test:
-go test ./...
+	go test ./...
 
 up: build
-@echo "demo environment not implemented"
+	@echo "demo environment not implemented"

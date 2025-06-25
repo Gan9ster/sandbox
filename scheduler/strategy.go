@@ -1,6 +1,6 @@
 package scheduler
 
-import "github.com/your-org/hsr/sandbox"
+import "github.com/gan9ster/sandbox/sandbox"
 
 // Strategy selects a runtime for the given task metadata.
 type Strategy interface {

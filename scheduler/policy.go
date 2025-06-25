@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/your-org/hsr/sandbox"
+	"github.com/gan9ster/sandbox/sandbox"
 )
 
 // Policy describes a set of matching rules that map tasks to runtimes.

@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"log"
 
-	docker "github.com/your-org/hsr/internal/runtime/docker"
-	firecracker "github.com/your-org/hsr/internal/runtime/firecracker"
-	gvisor "github.com/your-org/hsr/internal/runtime/gvisor"
-	"github.com/your-org/hsr/sandbox"
-	"github.com/your-org/hsr/scheduler"
+	"github.com/gan9ster/sandbox/internal/runtime/docker"
+	"github.com/gan9ster/sandbox/internal/runtime/firecracker"
+	"github.com/gan9ster/sandbox/internal/runtime/gvisor"
+	"github.com/gan9ster/sandbox/sandbox"
+	"github.com/gan9ster/sandbox/scheduler"
 )
 
 func main() {

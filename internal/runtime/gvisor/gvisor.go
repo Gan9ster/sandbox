@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/your-org/hsr/sandbox"
+	"github.com/gan9ster/sandbox/sandbox"
 )
 
 // Runtime implements sandbox.Runtime using Docker with the runsc runtime.

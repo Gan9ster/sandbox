@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/your-org/hsr/sandbox"
+	"github.com/gan9ster/sandbox/sandbox"
 )
 
 // Runtime implements sandbox.Runtime using the local Docker CLI.
@@ -15,7 +15,8 @@ type Runtime struct{}
 func New() *Runtime { return &Runtime{} }
 
 func (r *Runtime) Run(ctx context.Context, t sandbox.Task) (string, error) {
-	args := append([]string{"run", "-d", "--rm", t.Image}, t.Cmd...)
+	// Don't use --rm so we can collect logs and wait for completion
+	args := append([]string{"run", "-d", t.Image}, t.Cmd...)
 	cmd := exec.CommandContext(ctx, "docker", args...)
 	out, err := cmd.Output()
 	if err != nil {
