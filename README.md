@@ -88,6 +88,8 @@ type Strategy interface {
 ```
 
 Concrete adapters live under `internal/runtime/{docker,gvisor,firecracker}`.
+Each runtime is implemented as a thin wrapper around the corresponding CLI:
+`docker`, `docker --runtime=runsc`, and `ignite` for Firecracker.
 
 ---
 
