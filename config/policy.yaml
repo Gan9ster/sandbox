@@ -1,0 +1,10 @@
+rules:
+  - match:
+      lang: "python"
+      network: false
+    use: "gvisor"
+  - match:
+      binary: true
+      unknown-lang: true
+    use: "firecracker"
+default: "docker"
